@@ -5,7 +5,7 @@ resource "aws_s3_bucket" "sandbox_bucket" {
   acl    = "private"
 }
 
-resource "aws_s3_bucket" "sandbox_bucket" {
+resource "aws_s3_bucket" "sandbox_bucket1" {
   bucket = "aft-sandbox-acctcust-${data.aws_caller_identity.current.account_id}"
   acl    = "private"
 }
